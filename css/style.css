@@ -1,0 +1,195 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+    --cor-pulsar: #40cdda;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+/* * {
+    margin: 500;
+    padding: 0;
+} */
+
+
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background-color: var(--cor-secundaria);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:2%;
+  }
+  
+  
+  header {
+    background-color: lightgray;
+  }
+  
+  
+  main{
+    font-size: 20px;
+  }
+  footer {
+    background-color: var(--cor-primaria);
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: Cursive;
+    color: var(--cor-terciaria);
+  }
+  
+  p {
+    line-height: 1.2;
+  }
+  
+  /* li {
+    display: inline-block;
+    width: 25%;
+  } */
+  
+  /* nav {
+    display: inline-block;
+    width: 80%;
+  } */
+  
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    list-style-type: none;
+  }
+  
+  li a{
+    text-decoration: none;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 115%;
+    color: white;
+    background-color: var(--cor-primaria);
+  }
+  /* 
+  header img {
+    opacity: .7;
+    width: 10%;
+    position: relative;
+    top: 30px;
+  } */
+  .top{
+    background-image: url(../images/03.jpeg);
+      height: 300px;
+      background-position: 100% 30%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 10px;
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .grid img {
+    border: 5px solid var(--cor-primaria);
+    padding: 5px;
+    width: 80%;
+    opacity: .5;
+  }
+  
+  .grid img:hover {
+    border-radius: 20px;
+    opacity: 1;
+  }
+  
+  
+  body > a{
+    position: absolute;
+    left: -200px;
+    background-color: yellow;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  
+  body > a:focus{
+    left: 10px;
+  }
+  
+  .flex img{
+    background-color: var(--cor-primaria);
+    border: 2px solid darkgreen;
+    padding: 3px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 100%
+  }
+  
+  
+  .flex img:nth-child(odd){
+    border-radius: 50px;
+  }
+
+  .web {
+    text-decoration: none;
+    color: #22d4fd;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+  footer p {
+    text-align: center;
+    color: var(--cor-secundaria);
+  }
+
+
+  .head:hover {
+    text-align: center;
+    width: 50%;
+    max-width: 250px;
+    background-color: transparent;
+    padding: 2px;
+    border: 3px solid var(--cor-primaria);
+    backdrop-filter: blur(0px);
+    overflow: hidden;
+    transition: backdrop-filter 0.5s;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    animation-name: pulsar;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px var(--cor-primaria), inset 0 0 15px var(--cor-pulsar);
+    text-shadow: 0 0 15px var(--cor-primaria);
+}
+
+@keyframes pulsar {
+  0%{
+      transform: scale(1);
+  }
+
+  100%{
+      transform: scale(1.05);
+  }
+}
+
+  
+  
+  
+  
